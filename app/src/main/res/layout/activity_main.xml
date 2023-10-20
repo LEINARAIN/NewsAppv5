@@ -8,13 +8,14 @@
 
     <TextView
         android:id="@+id/NewsHeading"
-        android:text="News"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
-        android:layout_marginStart="18dp" />
-    
+        android:text="NewsApp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/articleRecyclerView"
         android:layout_width="match_parent"
@@ -24,15 +25,25 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/createButtton"
-        android:src="@drawable/baseline_add_24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
+        android:layout_alignParentBottom="true"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:contentDescription="Create" />
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="Create"
+        android:src="@drawable/baseline_add_24" />
+
+    <ImageView
+        android:id="@+id/profileButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/baseline_person_2_24" />
 
 </RelativeLayout>
